@@ -38,7 +38,8 @@ PRODUCT_PACKAGES_DEBUG += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    fstab.qcom
+    fstab.qcom \
+    init.verity.rc
 
 # Update engine
 PRODUCT_PACKAGES += \
