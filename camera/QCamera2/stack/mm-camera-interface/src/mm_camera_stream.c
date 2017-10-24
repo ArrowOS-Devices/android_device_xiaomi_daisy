@@ -1259,17 +1259,9 @@ int32_t mm_stream_streamoff(mm_stream_t *my_obj)
           my_obj->my_hdl, my_obj->fd, my_obj->state);
 
     /* step1: remove fd from data poll thread */
-    rc = mm_camera_poll_thread_del_poll_fd(&my_obj->ch_obj->poll_thread[0],
+    mm_camera_poll_thread_del_poll_fd(&my_obj->ch_obj->poll_thread[0],
             my_obj->my_hdl, mm_camera_sync_call);
-    if (rc < 0) {
-        /* The error might be due to async update. In this case
-         * wait for all updates to complete before proceeding. */
-        rc = mm_camera_poll_thread_commit_updates(&my_obj->ch_obj->poll_thread[0]);
-        if (rc < 0) {
-            LOGE("Poll sync failed %d", rc);
-            rc = 0;
-        }
-    }
+    mm_camera_poll_thread_commit_updates(&my_obj->ch_obj->poll_thread[0]);
 
 #ifndef DAEMON_PRESENT
     cam_shim_packet_t *shim_cmd;
