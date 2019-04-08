@@ -342,6 +342,8 @@ private:
             bool *p_is_metabuf_queued);
     void handleBatchMetadata(mm_camera_super_buf_t *metadata_buf,
             bool free_and_bufdone_meta_buf);
+    bool checkFrameInPendingList(
+            const uint32_t frame_number);
     void handleBufferWithLock(camera3_stream_buffer_t *buffer,
             uint32_t frame_number);
     void handleInputBufferWithLock(uint32_t frame_number);

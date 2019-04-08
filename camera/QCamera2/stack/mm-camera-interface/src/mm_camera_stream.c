@@ -562,6 +562,18 @@ int32_t mm_stream_fsm_inited(mm_stream_t *my_obj,
             break;
         }
         break;
+    case MM_STREAM_EVT_RELEASE:
+        /* destroy mutex */
+        LOGH("stream inited %d",my_obj->is_stream_inited);
+        if (my_obj->is_stream_inited) {
+            pthread_cond_destroy(&my_obj->buf_cond);
+            pthread_mutex_destroy(&my_obj->buf_lock);
+            pthread_mutex_destroy(&my_obj->cb_lock);
+            pthread_mutex_destroy(&my_obj->cmd_lock);
+            my_obj->is_stream_inited = 0;
+        }
+        memset(my_obj, 0, sizeof(mm_stream_t));
+        break;
     default:
         LOGE("invalid state (%d) for evt (%d), in(%p), out(%p)",
                     my_obj->state, evt, in_val, out_val);
@@ -998,6 +1010,7 @@ static int32_t mm_stream_bundled_map_buf_ops(
                               buf_map_list);
 }
 
+
 /*===========================================================================
  * FUNCTION   : mm_stream_unmap_buf_ops
  *
@@ -1083,6 +1096,7 @@ int32_t mm_stream_config(mm_stream_t *my_obj,
     my_obj->map_ops.bundled_map_ops = mm_stream_bundled_map_buf_ops;
     my_obj->map_ops.unmap_ops = mm_stream_unmap_buf_ops;
     my_obj->map_ops.userdata = my_obj;
+    my_obj->is_stream_inited = 1;
 
     if(my_obj->mem_vtbl.set_config_ops != NULL) {
         my_obj->mem_vtbl.set_config_ops(&my_obj->map_ops,
@@ -1136,10 +1150,14 @@ int32_t mm_stream_release(mm_stream_t *my_obj)
     }
 
     /* destroy mutex */
-    pthread_cond_destroy(&my_obj->buf_cond);
-    pthread_mutex_destroy(&my_obj->buf_lock);
-    pthread_mutex_destroy(&my_obj->cb_lock);
-    pthread_mutex_destroy(&my_obj->cmd_lock);
+    LOGH("stream inited %d",my_obj->is_stream_inited);
+    if (my_obj->is_stream_inited) {
+        pthread_cond_destroy(&my_obj->buf_cond);
+        pthread_mutex_destroy(&my_obj->buf_lock);
+        pthread_mutex_destroy(&my_obj->cb_lock);
+        pthread_mutex_destroy(&my_obj->cmd_lock);
+        my_obj->is_stream_inited = 0;
+    }
 
     /* reset stream obj */
     memset(my_obj, 0, sizeof(mm_stream_t));

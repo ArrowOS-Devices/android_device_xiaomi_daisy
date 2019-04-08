@@ -293,6 +293,7 @@ typedef struct mm_stream {
 
     /* Need to wait for buffer mapping before stream-on*/
     pthread_cond_t buf_cond;
+    uint8_t is_stream_inited;
 } mm_stream_t;
 
 /* mm_channel */

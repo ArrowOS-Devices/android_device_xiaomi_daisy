@@ -2731,6 +2731,31 @@ int32_t QCamera3HardwareInterface::handlePendingReprocResults(uint32_t frame_num
 }
 
 /*===========================================================================
+ * FUNCTION   : checkFrameInPendingList
+ *
+ * DESCRIPTION: Check for the frame_number present in pending request list or not.
+ *
+ * PARAMETERS : @frame_number: frame_number
+ *
+ * RETURN     :@bool: true if frame present in list else false.
+ *
+ *==========================================================================*/
+bool QCamera3HardwareInterface::checkFrameInPendingList(
+        const uint32_t frame_number)
+{
+    bool ret = false;
+    for(auto itr = mPendingRequestsList.begin(); itr != mPendingRequestsList.end(); itr++)
+    {
+        if(frame_number == itr->frame_number)
+        {
+            ret = true;
+            break;
+        }
+    }
+    return ret;
+}
+
+/*===========================================================================
  * FUNCTION   : handleBatchMetadata
  *
  * DESCRIPTION: Handles metadata buffer callback in batch mode
