@@ -167,6 +167,13 @@ PRODUCT_PACKAGES += \
 DEVICE_PACKAGE_OVERLAYS += hardware/qcom-caf/msm8996/audio/configs/common/overlay
 
 # Audio configuration
+PRODUCT_PACKAGES += \
+    libhdmiedid \
+    libhfp \
+    libsndmonitor \
+    libspkrprot \
+    libssrec
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy.conf \
     $(LOCAL_PATH)/configs/audio/audio_output_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_output_policy.conf \
