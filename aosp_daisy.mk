@@ -32,14 +32,19 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A2 Lite
 PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
+	
+TARGET_VENDOR_PRODUCT_NAME := daisy
+TARGET_VENDOR_DEVICE_NAME := daisy
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="daisy" \
-    PRODUCT_NAME="daisy_sprout" \
-    PRIVATE_BUILD_DESC="daisy-user 9 PKQ1.180917.001 V10.0.1.0.PDLMIFJ release-keys"
+    PRODUCT_NAME="daisy"
+
+#PRODUCT_BUILD_PROP_OVERRIDES += \
+#    PRIVATE_BUILD_DESC="daisy-user 9 PKQ1.180917.001 V10.0.1.0.PDLMIFJ release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := "xiaomi/daisy/daisy_sprout:9/PKQ1.180917.001/V10.0.1.0.PDLMIFJ:user/release-keys"
+#BUILD_FINGERPRINT := "xiaomi/daisy/daisy_sprout:9/PKQ1.180917.001/V10.0.1.0.PDLMIFJ:user/release-keys"
 
 # Use Gcam and Jelly
 TARGET_USE_GCAM := false
