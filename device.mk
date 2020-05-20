@@ -290,10 +290,6 @@ PRODUCT_PACKAGES += \
     ims-ext-common \
     ims_ext_common.xml
 	
-# init.d support
-#PRODUCT_PACKAGES += \
-#    sysinit
-
 # Input
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/ft5435_ts.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/ft5435_ts.kl \
