@@ -40,11 +40,12 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="daisy" \
     PRODUCT_NAME="daisy"
 
-#PRODUCT_BUILD_PROP_OVERRIDES += \
-#    PRIVATE_BUILD_DESC="daisy-user 9 PKQ1.180917.001 V10.0.1.0.PDLMIFJ release-keys"
+# Build Fingerprint
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRIVATE_BUILD_DESC="coral-user 10 QQ3A.200605.001 6392402 release-keys"
 
-# Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-#BUILD_FINGERPRINT := "xiaomi/daisy/daisy_sprout:9/PKQ1.180917.001/V10.0.1.0.PDLMIFJ:user/release-keys"
+# Build FP to be picked by both system and vendor
+BUILD_FINGERPRINT := "google/coral/coral:10/QQ3A.200605.001/6392402:user/release-keys"
 
 # Use Gcam and Jelly
 TARGET_USE_GCAM := false
