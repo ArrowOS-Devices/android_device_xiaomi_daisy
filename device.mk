@@ -399,6 +399,7 @@ PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
     init.qcom.sh \
     init.qcom.usb.rc \
+    init.qcom.usb.sh \
     init.target.rc \
     init.daisy.rc \
     move_time_data.sh \
