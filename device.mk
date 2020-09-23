@@ -372,7 +372,8 @@ PRODUCT_PACKAGES += \
     libOmxSwVencHevc \
     libOmxVdec \
     libOmxVenc \
-    libstagefrighthw
+    libstagefrighthw \
+    libgui_vendor
 
 # Perf
 PRODUCT_BOOT_JARS += \
