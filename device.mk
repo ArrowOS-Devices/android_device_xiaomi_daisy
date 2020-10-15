@@ -182,6 +182,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libbtconfigstore \
     libbluetooth_qti \
+    libbthost_if
 
 # Camera
 PRODUCT_PACKAGES += \
