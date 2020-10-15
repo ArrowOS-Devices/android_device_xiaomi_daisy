@@ -229,7 +229,8 @@ PRODUCT_PACKAGES += \
     libgenlock \
     libtinyxml \
     libjson \
-    libjson.vendor
+    libjson.vendor \
+    disable_configstore
 
 # Device-specific settings
 PRODUCT_PACKAGES += \
