@@ -23,8 +23,7 @@ $(call inherit-product, vendor/google-customization/config.mk)
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/xiaomi \
-    hardware/google/pixel
+    hardware/xiaomi
 
 # Set boot SPL
 BOOT_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
@@ -394,8 +393,7 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.2-service-qti \
-    android.hardware.power.stats@1.0-service.mock
+    android.hardware.power-service-qti
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml \
