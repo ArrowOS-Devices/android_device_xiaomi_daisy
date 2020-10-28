@@ -1,6 +1,8 @@
-# Allow appdomain to get persist_camera_prop
-get_prop(appdomain, persist_camera_prop)
+# Allow appdomain to get vendor_persist_camera_prop
+get_prop(appdomain, vendor_persist_camera_prop)
 
 # Mlipay
 get_prop({ appdomain -isolated_app }, vendor_fp_prop)
 get_prop({ appdomain -isolated_app }, vendor_tee_listener_prop)
+
+r_dir_file(appdomain, system_data_file)
