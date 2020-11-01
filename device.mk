@@ -198,6 +198,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.postproc@1.0 \
     libdng_sdk.vendor \
     android.hardware.camera.device@3.4
+		
+# Component overrides
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
 
 # Consumerir
 PRODUCT_PACKAGES += \
