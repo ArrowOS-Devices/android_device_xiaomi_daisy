@@ -594,8 +594,5 @@ PRODUCT_BOOT_JARS += \
 
 # WiFi Display
 PRODUCT_PACKAGES += \
-    libdisplayconfig.vendor \
-    libdisplayconfig \
     libnl \
-    libnl.vendor \
-    libqdMetaData
+    libnl.vendor
