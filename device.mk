@@ -159,7 +159,8 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio@2.0-impl \
     android.hardware.bluetooth.a2dp@1.0-impl \
     android.hardware.bluetooth.a2dp@1.0-service \
-    vendor.qti.hardware.bluetooth_dun@1.0
+    vendor.qti.hardware.bluetooth_dun@1.0 \
+    libbluetooth_audio_session
 
 #Audio Specific device overlays
 DEVICE_PACKAGE_OVERLAYS += hardware/qcom-caf/msm8996/audio/configs/common/overlay
@@ -189,6 +190,7 @@ PRODUCT_PACKAGES += \
     libbtconfigstore \
     libbluetooth_qti \
     libbthost_if \
+    bt_configstore \
     bt_did.conf \
     bt_stack.conf
 
