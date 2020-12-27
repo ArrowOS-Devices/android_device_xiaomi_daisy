@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+AB_OTA_UPDATER := true
+
 # Inherit from sakura-common
 $(call inherit-product, device/xiaomi/sakura-common/sakura.mk)
 
