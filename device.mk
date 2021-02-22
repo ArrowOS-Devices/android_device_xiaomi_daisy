@@ -157,8 +157,11 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.a2dp@1.0-service\
     android.hardware.bluetooth.audio@2.0 \
     android.hardware.bluetooth.audio@2.0-impl:32 \
+    com.qualcomm.qti.bluetooth_audio@1.0 \
     com.qualcomm.qti.bluetooth_audio@1.0.vendor \
+    vendor.qti.hardware.bluetooth_audio@2.0 \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor \
+    vendor.qti.hardware.bluetooth_dun@1.0 \
     vendor.qti.hardware.bluetooth_dun@1.0.vendor \
     libbluetooth_audio_session
 
@@ -189,8 +192,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     bt_did.conf \
     bt_stack.conf \
+    vendor.qti.hardware.btconfigstore@1.0 \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
-    vendor.qti.hardware.btconfigstore@2.0.vendor \
+    vendor.qti.hardware.btconfigstore@2.0 \
+    vendor.qti.hardware.btconfigstore@2.0.vendor
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -208,6 +213,7 @@ PRODUCT_COPY_FILES += \
 
 # Configstore
 PRODUCT_PACKAGES += \
+    vendor.qti.hardware.capabilityconfigstore@1.0 \
     vendor.qti.hardware.capabilityconfigstore@1.0.vendor
 
 # Consumerir
@@ -227,17 +233,16 @@ PRODUCT_PACKAGES += \
     vendor.display.config@1.12.vendor \
     vendor.display.config@2.0 \
     vendor.display.config@2.0.vendor \
-    vendor.qti.hardware.display.allocator@1.0 \
-    vendor.qti.hardware.display.allocator@3.0 \
-    vendor.qti.hardware.display.composer@1.0 \
-    vendor.qti.hardware.display.composer@2.0 \
-    vendor.qti.hardware.display.mapper@1.0 \
-    vendor.qti.hardware.display.mapper@1.1 \
-    vendor.qti.hardware.display.mapper@2.0 \
-    vendor.qti.hardware.display.mapper@3.0 \
-    vendor.qti.hardware.display.mapper@4.0 \
-    vendor.qti.hardware.display.mapperextensions@1.0 \
-    vendor.qti.hardware.display.mapperextensions@1.1 \
+    vendor.qti.hardware.display.allocator@1.0.vendor \
+    vendor.qti.hardware.display.allocator@3.0.vendor \
+    vendor.qti.hardware.display.composer@1.0.vendor \
+    vendor.qti.hardware.display.composer@2.0.vendor \
+    vendor.qti.hardware.display.mapper@1.0.vendor \
+    vendor.qti.hardware.display.mapper@1.1.vendor \
+    vendor.qti.hardware.display.mapper@2.0.vendor \
+    vendor.qti.hardware.display.mapper@3.0.vendor \
+    vendor.qti.hardware.display.mapper@4.0.vendor \
+    vendor.qti.hardware.display.mapperextensions@1.1.vendor \
     copybit.msm8953 \
     gralloc.msm8953 \
     hwcomposer.msm8953 \
@@ -401,7 +406,9 @@ PRODUCT_PACKAGES += \
 
 # Perf
 PRODUCT_PACKAGES += \
+    vendor.qti.hardware.perf@1.0 \
     vendor.qti.hardware.perf@1.0.vendor \
+    vendor.qti.hardware.perf@2.2 \
     vendor.qti.hardware.perf@2.2.vendor
 
 PRODUCT_BOOT_JARS += \
