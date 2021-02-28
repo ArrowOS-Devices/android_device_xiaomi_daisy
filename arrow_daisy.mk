@@ -43,6 +43,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="daisy" \
     PRODUCT_NAME="daisy"
 
+# Arrow maintainer
+DEVICE_MAINTAINER := acras
+
 # Build Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="coral-user 11 RQ1A.210205.004 7038034 release-keys"
