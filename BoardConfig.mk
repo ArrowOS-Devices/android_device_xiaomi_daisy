@@ -191,6 +191,7 @@ TARGET_PER_MGR_ENABLED := true
 # Power
 TARGET_RPM_SYSTEM_STAT := /d/rpm_master_stats
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/wakeup_gesture"
+BOARD_POWER_CUSTOM_BOARD_LIB := libpower_8953
 
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
