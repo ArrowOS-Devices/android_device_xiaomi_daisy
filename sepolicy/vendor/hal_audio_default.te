@@ -1,4 +1,5 @@
-allow hal_audio_default audio_prop:property_service set;
+set_prop(hal_audio_default, audio_prop)
+
 allow hal_audio_default audio_prop:file { getattr open read };
 allow hal_audio_default init:unix_stream_socket connectto;
 allow hal_audio_default vendor_data_file:dir { create write add_name };

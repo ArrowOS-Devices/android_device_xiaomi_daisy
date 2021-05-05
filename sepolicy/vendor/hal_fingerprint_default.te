@@ -69,13 +69,13 @@ allow hal_fingerprint_default sysfs_fpc_dev:file rw_file_perms;
 allow hal_fingerprint_default sysfs_leds:dir search;
 allow hal_fingerprint_default sysfs_leds:file { open read };
 
-allow hal_fingerprint_default system_prop:property_service set;
+set_prop(hal_fingerprint_default, system_prop)
 
 allow hal_fingerprint_default tee_device:chr_file rw_file_perms;
 
 allow hal_fingerprint_default uhid_device:chr_file rw_file_perms;
 
-allow hal_fingerprint_default vendor_system_prop:property_service set;
+set_prop(hal_fingerprint_default, vendor_system_prop)
 
 allow hal_fingerprint_default vfat:file { getattr open read };
 

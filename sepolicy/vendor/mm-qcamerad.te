@@ -17,7 +17,8 @@ allow mm-qcamerad fwk_sensor_hwservice:hwservice_manager find;
 allow mm-qcamerad sysfs:file { getattr open read };
 allow mm-qcamerad debugfs:dir { read open };
 allow mm-qcamerad diag_device:chr_file { ioctl open read write };
-allow mm-qcamerad vendor_persist_camera_prop:property_service set;
+
+set_prop(mm-qcamerad, vendor_persist_camera_prop)
 
 allow mm-qcamerad camera_socket:dir w_dir_perms;
 allow mm-qcamerad camera_socket:sock_file { create unlink write };

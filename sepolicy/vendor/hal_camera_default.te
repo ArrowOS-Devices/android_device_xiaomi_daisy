@@ -2,7 +2,9 @@ allow hal_camera_default camera_data_file:sock_file write;
 allow hal_camera_default camera_socket:sock_file write;
 allow hal_camera_default camera_socket:dir search;
 allow hal_camera_default vendor_persist_camera_prop:sock_file { getattr open read };
-allow hal_camera_default vendor_persist_camera_prop:property_service set;
+
+set_prop(hal_camera_default, vendor_persist_camera_prop)
+
 allow hal_camera_default vendor_persist_camera_prop:file { getattr open read };
 allow hal_camera_default sysfs_kgsl:lnk_file read;
 allow hal_camera_default sysfs_kgsl:file { getattr read open };
