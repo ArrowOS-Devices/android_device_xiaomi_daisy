@@ -52,11 +52,17 @@ void property_override_dual(char const system_prop[], char const vendor_prop[], 
     property_override(vendor_prop, value);
 }
 
+void property_override_multi(char const system_prop[], char const vendor_prop[],char const bootimage_prop[], char const value[]) {
+    property_override(system_prop, value);
+    property_override(vendor_prop, value);
+    property_override(bootimage_prop, value);
+}
+
 void vendor_load_properties()
 {
     // fingerprint
     property_override("ro.build.description", "coral-user 11 RQ2A.210505.002 7246365 release-keys");
-    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/coral/coral:11/RQ2A.210505.002/7246365:user/release-keys");
+    property_override_multi("ro.build.fingerprint", "ro.vendor.build.fingerprint", "ro.bootimage.build.fingerprint", "google/coral/coral:11/RQ2A.210505.002/7246365:user/release-keys");
     // Misc
     property_override("ro.com.google.clientidbase", "android-xiaomi");
     property_override("ro.com.google.clientidbase.ms", "android-xiaomi-rev1");
