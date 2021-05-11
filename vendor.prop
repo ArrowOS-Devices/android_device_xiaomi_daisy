@@ -162,7 +162,7 @@ ro.vendor.qti.core_ctl_min_cpu=2
 ro.vendor.qti.core_ctl_max_cpu=4
 
 # Display
-debug.egl.hw=0
+debug.egl.hw=1
 debug.enable.sglscale=1
 debug.gralloc.enable_fb_ubwc=1
 debug.mdpcomp.logs=0
@@ -176,10 +176,9 @@ sdm.debug.disable_skip_validate=1
 vendor.display.enable_default_color_mode=1
 vendor.display.disable_skip_validate=1
 vendor.gralloc.enable_fb_ubwc=1
-debug.composition.type=skiavk
-debug.hwui.renderer=skiavk
-ro.vendor.display.sensortype=2
-persist.vendor.max.brightness=475
+debug.composition.type=c2d
+debug.hwui.renderer=skiagl
+video.accelerate.hw=1
 
 # DPM
 persist.vendor.dpm.loglevel=0
