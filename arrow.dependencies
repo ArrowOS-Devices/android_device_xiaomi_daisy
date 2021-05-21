@@ -1,34 +1,22 @@
 [
   {
-    "repository": "RebornDaisyProject/daisy_msm8953",
-    "target_path": "kernel/xiaomi/daisy",
-    "branch": "android11-4.9",
-    "remote": "github"
+    "repository": "android_kernel_xiaomi_daisy",
+    "target_path": "kernel/xiaomi/daisy"
   },
   {
-    "repository": "acras01/android_vendor_xiaomi_daisy",
-    "target_path": "vendor/xiaomi/daisy",
-    "branch": "arrow-11.0",
-    "remote": "github"
+    "repository": "android_vendor_xiaomi_daisy",
+    "target_path": "vendor/xiaomi/daisy"
   },
   {
-    "repository": "LineageOS/android_hardware_xiaomi",
-    "target_path": "hardware/xiaomi",
-    "branch": "lineage-18.1",
-    "remote": "github"
+    "repository": "android_hardware_xiaomi",
+    "target_path": "hardware/xiaomi"
   },
   {
     "remote": "github",
-    "repository": "kdrag0n/proton-clang",
-    "target_path": "prebuilts/clang/host/linux-x86/clang-proton",
+    "repository": "acras01/treble_app",
+    "target_path": "vendor/phh_Doze",
     "branch": "master"
-  }
-  {
-    "remote": "gitlab",
-    "repository": "acras1/stock_base",
-    "target_path": "vendor/daisy-q-base",
-    "branch": "master"
-  }
+  },
   {
     "remote": "github",
     "repository": "acras01/vendor_custom_prebuilts",
