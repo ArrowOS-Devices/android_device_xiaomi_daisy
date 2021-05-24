@@ -279,7 +279,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint feature
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.2-service.xiaomi
+    android.hardware.biometrics.fingerprint@2.2-service.xiaomi_daisy
 
 # FM
 PRODUCT_PACKAGES += \
