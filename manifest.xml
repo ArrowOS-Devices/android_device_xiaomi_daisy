@@ -682,4 +682,14 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         </interface>
         <fqname>@1.0::IXiaomiFingerprint/default</fqname>
     </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.mwqemadapter</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IMwqemAdapter</name>
+            <instance>MwqemAdapter</instance>
+        </interface>
+        <fqname>@1.0::IMwqemAdapter/MwqemAdapter</fqname>
+    </hal>
 </manifest>
