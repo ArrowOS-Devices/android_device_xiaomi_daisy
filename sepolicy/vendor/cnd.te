@@ -3,3 +3,7 @@ allow cnd hostapd:process { sigkill };
 allow cnd wifi_prop:file { read open getattr };
 
 binder_call(cnd, radio)
+
+add_hwservice(cnd,hal_mwqemadapter_hwservice)
+allow cnd hal_mwqemadapter_hwservice:hwservice_manager find;
+get_prop(cnd, vendor_mwqem_prop)

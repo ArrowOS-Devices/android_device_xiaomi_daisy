@@ -25,3 +25,6 @@ type power_prop, property_type;
 
 # Vendor FP
 type vendor_fp_prop, property_type;
+
+# mwqem property
+vendor_restricted_prop(vendor_mwqem_prop);
