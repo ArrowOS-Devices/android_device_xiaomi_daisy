@@ -99,3 +99,6 @@
 
 # IIO
 /sys/bus/iio/devices(/.*)?     u:object_r:sysfs_device_sensor:s0
+
+# OTA
+/system/bin/move_time_data\.sh                                                u:object_r:move-time-data-sh_exec:s0
