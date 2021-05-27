@@ -472,6 +472,7 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     init.daisy.rc \
     move_time_data.sh \
+    move_widevine_data.sh \
     move_wifi_data.sh \
     ueventd.qcom.rc \
     init.camera.rc \
