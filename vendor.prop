@@ -115,6 +115,7 @@ vendor.audio.read.wsatz.type=true
 ro.af.client_heap_size_kbyte=7168
 
 persist.vendor.audio.hw.binder.size_kbyte=1024
+vendor.fastrpc.disable.adsprpcd_sensorspd.daemon=1
 
 # Bluetooth
 bluetooth.hfp.client=1
