@@ -33,6 +33,9 @@ vendor.powerhal.init                    u:object_r:power_prop:s0
 vendor.powerhal.rendering               u:object_r:power_prop:s0
 vendor.powerhal.state                   u:object_r:power_prop:s0
 
+# Power-Off alarm
+ro.alarm_boot                           u:object_r:vendor_alarm_boot_prop:s0
+
 # Radio
 sys.fake_bs_flag0                                             u:object_r:system_radio_prop:s0
 sys.fake_bs_flag1                                             u:object_r:system_radio_prop:s0
