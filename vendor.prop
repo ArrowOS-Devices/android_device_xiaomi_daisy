@@ -100,7 +100,7 @@ vendor.voice.voip.conc.disabled=true
 vendor.voice.conc.fallbackpath=deep-buffer
 
 #Disable speaker protection by default
-persist.vendor.audio.speaker.prot.enable=false
+#persist.vendor.audio.speaker.prot.enable=false
 
 #Enable HW AAC Encoder by default
 vendor.audio.hw.aac.encoder=true
