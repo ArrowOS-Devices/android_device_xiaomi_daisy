@@ -241,6 +241,12 @@ TARGET_NO_RECOVERY := true
 # We modify several neverallows, so let the build proceed
 #SELINUX_IGNORE_NEVERALLOWS := true
 
+# Shims
+TARGET_LD_SHIM_LIBS := \
+    /vendor/lib64/hw/gf_fingerprint.default.so|fakelogprint.so \
+    /vendor/lib64/libgf_ca.so|fakelogprint.so \
+    /vendor/lib64/libgf_hal.so|fakelogprint.so
+
 # Treble
 BOARD_VNDK_VERSION := current
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
