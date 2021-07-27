@@ -565,8 +565,6 @@ PRODUCT_COPY_FILES += \
     vendor/qcom/opensource/vibrator/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
 
 # VNDK
-PRODUCT_EXTRA_VNDK_VERSIONS := 29
-
 PRODUCT_PACKAGES += \
     libicuuc.vendor \
     libstdc++.vendor \
