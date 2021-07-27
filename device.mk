@@ -249,16 +249,13 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@3.0.vendor \
     vendor.qti.hardware.display.mapper@4.0.vendor \
     vendor.qti.hardware.display.mapperextensions@1.1.vendor \
-    copybit.msm8953 \
     gralloc.msm8953 \
     hwcomposer.msm8953 \
     memtrack.msm8953 \
     libdisplayconfig \
     libdisplayconfig.vendor \
-    liboverlay \
     libqdMetaData \
     libqdMetaData.vendor \
-    libgenlock \
     libtinyxml \
     libjson \
     libjson.vendor \
@@ -281,8 +278,6 @@ PRODUCT_PACKAGES += \
 
 # Ebtables
 PRODUCT_PACKAGES += \
-    ebtables \
-    ethertypes \
     libebtc
 
 # Fingerprint feature
@@ -538,10 +533,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     $(LOCAL_PATH)/configs/sensors/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev.conf
 
-# TextClassifier smart selection model files
-PRODUCT_PACKAGES += \
-    textclassifier.bundle1
-
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.qti
@@ -581,7 +572,6 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
     libcld80211 \
     libqsap_sdk \
-    libQWiFiSoftApCfg \
     libwpa_client \
     hostapd \
     dhcpcd.conf \
