@@ -15,13 +15,6 @@ dalvik.vm.image-dex2oat-filter=quicken
 dalvik.vm.image-dex2oat-threads=8
 
 # Audio
-audio_para_version=QL1715-Audiopara-V03-20180302
-acdb_id_para_version=QL1715-Audiopara-V03-20180302
-audio.chk.cal.us=0
-audio.chk.cal.spk=0
-audio.offload.disable=true
-persist.audio.parameter.ce=0
-
 # Reduce client buffer size for fast audio output tracks
 af.fast_track_multiplier=1
 
@@ -62,7 +55,7 @@ vendor.audio.offload.multiaac.enable=true
 vendor.audio.dolby.ds2.enabled=false
 vendor.audio.dolby.ds2.hardbypass=false
 
-#Disable Multiple offload session
+#Disable Multiple offload sesison
 vendor.audio.offload.multiple.enabled=false
 
 #Disable Compress passthrough playback
@@ -83,7 +76,7 @@ vendor.audio.parser.ip.buffer.size=262144
 #enable downsampling for multi-channel content > 48Khz
 vendor.audio.playback.mch.downsample=true
 
-#enable software decoders for ALAC and APE
+#enable software decoders for ALAC and APE.
 vendor.audio.use.sw.alac.decoder=true
 vendor.audio.use.sw.ape.decoder=true
 
@@ -99,8 +92,8 @@ vendor.voice.voip.conc.disabled=true
 #deep-buffer and fast are the two allowed fallback paths now.
 vendor.voice.conc.fallbackpath=deep-buffer
 
-#Disable speaker protection by default
-#persist.vendor.audio.speaker.prot.enable=false
+#Enable speaker protection by default
+persist.vendor.audio.speaker.prot.enable=true
 
 #Enable HW AAC Encoder by default
 vendor.audio.hw.aac.encoder=true
@@ -108,13 +101,62 @@ vendor.audio.hw.aac.encoder=true
 #flac sw decoder 24 bit decode capability
 vendor.audio.flac.sw.decoder.24bit=true
 
+#timeout crash duration set to 20sec before system is ready.
+#timeout duration updates to default timeout of 5sec once the system is ready.
+vendor.audio.hal.boot.timeout.ms=20000
+
 #read wsatz name from thermal zone type
 vendor.audio.read.wsatz.type=true
 
 #Set AudioFlinger client heap size
 ro.af.client_heap_size_kbyte=7168
-
 persist.vendor.audio.hw.binder.size_kbyte=1024
+
+#Set speaker protection cal tx path sampling rate to 48k
+vendor.audio.spkr_prot.tx.sampling_rate=48000
+
+# add dynamic feature flags here
+vendor.audio.feature.snd_mon.enable=true
+vendor.audio.feature.compr_cap.enable=false
+vendor.audio.feature.hifi_audio.enable=true
+vendor.audio.feature.hdmi_edid.enable=true
+vendor.audio.feature.spkr_prot.enable=true
+vendor.audio.feature.dsm_feedback.enable=false
+vendor.audio.feature.ssrec.enable=true
+vendor.audio.feature.compr_voip.enable=true
+vendor.audio.feature.kpi_optimize.enable=true
+vendor.audio.feature.usb_offload.enable=false
+vendor.audio.feature.usb_offload_burst_mode.enable=false
+vendor.audio.feature.usb_offload_sidetone_volume.enable=false
+vendor.audio.feature.src_trkn.enable=true
+vendor.audio.feature.ras.enable=false
+vendor.audio.feature.a2dp_offload.enable=false
+vendor.audio.feature.wsa.enable=true
+vendor.audio.feature.compress_meta_data.enable=true
+vendor.audio.feature.vbat.enable=true
+vendor.audio.feature.display_port.enable=false
+vendor.audio.feature.fluence.enable=true
+vendor.audio.feature.custom_stereo.enable=true
+vendor.audio.feature.anc_headset.enable=true
+vendor.audio.feature.fm.enable=true
+vendor.audio.feature.external_dsp.enable=false
+vendor.audio.feature.external_speaker.enable=false
+vendor.audio.feature.external_speaker_tfa.enable=false
+vendor.audio.feature.hwdep_cal.enable=false
+vendor.audio.feature.hfp.enable=true
+vendor.audio.feature.ext_hw_plugin.enable=false
+vendor.audio.feature.record_play_concurency.enable=false
+vendor.audio.feature.hdmi_passthrough.enable=false
+vendor.audio.feature.concurrent_capture.enable=false
+vendor.audio.feature.compress_in.enable=false
+vendor.audio.feature.battery_listener.enable=false
+vendor.audio.feature.maxx_audio.enable=false
+vendor.audio.feature.audiozoom.enable=false
+vendor.audio.feature.auto_hal.enable=false
+vendor.audio.read.wsatz.type=true
+vendor.audio.feature.multi_voice_session.enable=true
+vendor.audio.feature.incall_music.enable=true
+
 vendor.fastrpc.disable.adsprpcd_sensorspd.daemon=1
 
 # Bluetooth
