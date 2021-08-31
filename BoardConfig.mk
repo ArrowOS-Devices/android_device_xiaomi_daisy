@@ -243,9 +243,10 @@ TARGET_NO_RECOVERY := true
 
 # Shims
 TARGET_LD_SHIM_LIBS := \
-    /vendor/lib64/hw/gf_fingerprint.default.so|fakelogprint.so \
+    /vendor/lib64/hw/fingerprint.goodix.default.so|fakelogprint.so \
     /vendor/lib64/libgf_ca.so|fakelogprint.so \
-    /vendor/lib64/libgf_hal.so|fakelogprint.so
+    /vendor/lib64/libgf_hal.so|fakelogprint.so \
+    /vendor/lib64/hw/fingerprint.fpc.default.so|fakelogprint.so
 
 # Treble
 BOARD_VNDK_VERSION := current
