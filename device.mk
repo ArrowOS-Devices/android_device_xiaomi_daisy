@@ -136,6 +136,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@6.0 \
     android.hardware.audio.effect@6.0-impl:32 \
     android.hardware.soundtrigger@2.2-impl:32 \
+    audio.primary.msm8953 \
     audio.r_submix.default \
     audio.usb.default \
     libaudiopreprocessing \
