@@ -61,9 +61,6 @@ vendor.audio.offload.multiple.enabled=false
 #Disable Compress passthrough playback
 vendor.audio.offload.passthrough=false
 
-#Disable surround sound recording
-ro.vendor.audio.sdk.ssr=false
-
 #enable dsp gapless mode by default
 vendor.audio.offload.gapless.enabled=true
 
@@ -92,9 +89,6 @@ vendor.voice.voip.conc.disabled=true
 #deep-buffer and fast are the two allowed fallback paths now.
 vendor.voice.conc.fallbackpath=deep-buffer
 
-#Enable speaker protection by default
-persist.vendor.audio.speaker.prot.enable=true
-
 #Enable HW AAC Encoder by default
 vendor.audio.hw.aac.encoder=true
 
@@ -112,17 +106,10 @@ vendor.audio.read.wsatz.type=true
 ro.af.client_heap_size_kbyte=7168
 persist.vendor.audio.hw.binder.size_kbyte=1024
 
-#Set speaker protection cal tx path sampling rate to 48k
-vendor.audio.spkr_prot.tx.sampling_rate=48000
-
 # add dynamic feature flags here
-vendor.audio.feature.snd_mon.enable=true
 vendor.audio.feature.compr_cap.enable=false
 vendor.audio.feature.hifi_audio.enable=true
-vendor.audio.feature.hdmi_edid.enable=true
-vendor.audio.feature.spkr_prot.enable=true
 vendor.audio.feature.dsm_feedback.enable=false
-vendor.audio.feature.ssrec.enable=true
 vendor.audio.feature.compr_voip.enable=true
 vendor.audio.feature.kpi_optimize.enable=true
 vendor.audio.feature.usb_offload.enable=false
@@ -143,10 +130,8 @@ vendor.audio.feature.external_dsp.enable=false
 vendor.audio.feature.external_speaker.enable=false
 vendor.audio.feature.external_speaker_tfa.enable=false
 vendor.audio.feature.hwdep_cal.enable=false
-vendor.audio.feature.hfp.enable=true
 vendor.audio.feature.ext_hw_plugin.enable=false
 vendor.audio.feature.record_play_concurency.enable=false
-vendor.audio.feature.hdmi_passthrough.enable=false
 vendor.audio.feature.concurrent_capture.enable=false
 vendor.audio.feature.compress_in.enable=false
 vendor.audio.feature.battery_listener.enable=false
