@@ -128,14 +128,11 @@ PRODUCT_PACKAGES += \
 
 # Audio
 PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
+    android.hardware.audio@6.0-impl \
+    android.hardware.audio.effect@6.0-impl \
     android.hardware.audio.service \
-    android.hardware.audio@6.0 \
-    android.hardware.audio.common@6.0 \
-    android.hardware.audio.common@6.0-util \
-    android.hardware.audio@6.0-impl:32 \
-    android.hardware.audio.effect@6.0 \
-    android.hardware.audio.effect@6.0-impl:32 \
-    android.hardware.soundtrigger@2.2-impl:32 \
+    android.hardware.soundtrigger@2.1-impl \
     audio.primary.msm8953 \
     audio.r_submix.default \
     audio.usb.default \
@@ -147,7 +144,7 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     libqcompostprocbundle \
     libvolumelistener \
-    libtinymix
+    libtinycompress
 
 # A2DP
 PRODUCT_PACKAGES += \
