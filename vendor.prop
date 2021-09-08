@@ -56,8 +56,6 @@ persist.vendor.audio.fluence.voicecall=true
 persist.vendor.audio.fluence.voicerec=true
 persist.vendor.audio.fluence.speaker=true
 
-vendor.fastrpc.disable.adsprpcd_sensorspd.daemon=1
-
 # Bluetooth
 bluetooth.hfp.client=1
 persist.bluetooth.bluetooth_audio_hal.disabled=true
