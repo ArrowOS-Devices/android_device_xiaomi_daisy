@@ -90,9 +90,6 @@ vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.huaq
 vendor.camera.aux.packagelist2=com.android.systemui,com.huaqin.cameraautotest,com.huaqin.runtime
 vendor.camera.hal1.packagelist=com.skype.raider,com.viber.voip,com.instagram.android,org.telegram.messenger
 
-# Coresight
-persist.debug.coresight.config=stm-events
-
 # Console
 persist.console.silent.config=1
 
