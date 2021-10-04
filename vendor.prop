@@ -141,6 +141,8 @@ ro.ril.def.agps.mode=1
 
 # Media
 av.debug.disable.pers.cache=1
+debug.stagefright.omx_default_rank=0
+debug.stagefright.omx_default_rank.sw-audio=1
 media.aac_51_output_enabled=true
 media.msm8956hw=0
 mm.enable.sec.smoothstreaming=true
