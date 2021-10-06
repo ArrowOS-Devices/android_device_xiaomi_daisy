@@ -48,10 +48,10 @@ DEVICE_MAINTAINER := acras
 
 # Build Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="coral-user 11 RQ3A.210905.001 7511028 release-keys"
+    PRIVATE_BUILD_DESC="coral-user 11 RQ3A.211001.001 7641976 release-keys"
 
 # Build FP to be picked by both system and vendor
-BUILD_FINGERPRINT := "google/coral/coral:11/RQ3A.210905.001/7511028:user/release-keys"
+BUILD_FINGERPRINT := "google/coral/coral:11/RQ3A.211001.001/7641976:user/release-keys"
 
 # Use MiuiCamera
 WITH_MIUICAM := true
