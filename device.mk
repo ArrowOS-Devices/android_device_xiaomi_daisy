@@ -382,9 +382,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@2.2 \
     vendor.qti.hardware.perf@2.2.vendor
 
-PRODUCT_BOOT_JARS += \
-    QPerformance \
-    UxPerformance
+#PRODUCT_BOOT_JARS += \
+#    QPerformance \
+#    UxPerformance
 
 # Pre-opt SystemUI
 PRODUCT_DEXPREOPT_SPEED_APPS += \
@@ -476,8 +476,8 @@ PRODUCT_PACKAGES += \
     CarrierConfigOverlay
 
 PRODUCT_BOOT_JARS += \
-    telephony-ext \
-    ims-ext-common_system
+    telephony-ext #\
+#    ims-ext-common_system
 
 # Codec2
 PRODUCT_PACKAGES += \
@@ -564,8 +564,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
 
 # Wi-Fi Display
-PRODUCT_BOOT_JARS += \
-    WfdCommon
+#PRODUCT_BOOT_JARS += \
+#    WfdCommon
 
 # WiFi Display
 PRODUCT_PACKAGES += \
