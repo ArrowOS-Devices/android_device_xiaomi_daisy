@@ -83,6 +83,20 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.sip.voip.xml \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
 
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@4.1.vendor \
+    android.hardware.gatekeeper@1.0.vendor \
+    android.hardware.biometrics.fingerprint@2.1.vendor \
+    android.hardware.radio@1.5.vendor \
+    android.hardware.gnss@1.1.vendor \
+    android.hardware.bluetooth@1.0.vendor \
+    android.hardware.neuralnetworks@1.3.vendor \
+    android.hardware.secure_element@1.2.vendor \
+    android.system.net.netd@1.1.vendor \
+    android.hardware.radio.config@1.2.vendor \
+    android.hardware.gnss@2.1.vendor \
+    android.hardware.radio.deprecated@1.0.vendor
+
 # ANT
 PRODUCT_PACKAGES += \
     AntHalService \
