@@ -446,7 +446,8 @@ PRODUCT_PACKAGES += \
     init.daisy.rc \
     ueventd.qcom.rc \
     init.camera.rc \
-    init.camera.sh
+    init.camera.sh \
+    init.logcat.rc
 
 # RCS
 PRODUCT_PACKAGES += \
