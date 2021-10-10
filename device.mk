@@ -197,10 +197,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
     vendor.qti.hardware.btconfigstore@2.0.vendor
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/bluetooth/bt_did.conf:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/bt_did.conf \
-    $(LOCAL_PATH)/configs/bluetooth/bt_stack.conf:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/bt_stack.conf
-
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl:32 \
