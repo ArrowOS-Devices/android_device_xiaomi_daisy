@@ -239,8 +239,7 @@ PRODUCT_PACKAGES += \
 
 # Device-specific settings
 PRODUCT_PACKAGES += \
-    phh_Doze \
-    XiaomiParts
+    phh_Doze
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/permissions/me.phh.treble.app.xml:system/etc/permissions/me.phh.treble.app.xml
@@ -455,8 +454,6 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     init.daisy.rc \
     ueventd.qcom.rc \
-    init.camera.rc \
-    init.camera.sh \
     init.logcat.rc
 
 # RCS
