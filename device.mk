@@ -95,7 +95,11 @@ PRODUCT_PACKAGES += \
     android.system.net.netd@1.1.vendor \
     android.hardware.radio.config@1.2.vendor \
     android.hardware.gnss@2.1.vendor \
-    android.hardware.radio.deprecated@1.0.vendor
+    android.hardware.radio.deprecated@1.0.vendor \
+    android.hidl.allocator@1.0.vendor \
+    android.hardware.drm@1.1.vendor \
+    android.hardware.drm@1.2.vendor \
+    android.hardware.power@1.2.vendor
 
 # ANT
 PRODUCT_PACKAGES += \
