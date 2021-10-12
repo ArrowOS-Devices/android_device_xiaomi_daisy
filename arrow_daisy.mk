@@ -54,4 +54,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := "google/coral/coral:11/RQ3A.211001.001/7641976:user/release-keys"
 
 # Use MiuiCamera
-WITH_MIUICAM := true
+#WITH_MIUICAM := true
