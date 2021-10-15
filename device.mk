@@ -235,7 +235,6 @@ PRODUCT_PACKAGES += \
     libdisplayconfig.vendor \
     libqdMetaData \
     libqdMetaData.vendor \
-    libtinyxml \
     libjson \
     libjson.vendor \
     disable_configstore
@@ -475,7 +474,6 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.2 \
     android.hardware.radio.deprecated@1.0 \
     android.hardware.secure_element@1.2 \
-    librmnetctl \
     libcnefeatureconfig \
     qti-telephony-common \
     qti-telephony-hidl-wrapper \
