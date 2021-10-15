@@ -247,6 +247,10 @@ sys.thermal.data.path=/data/vendor/thermal/
 # Time Services
 persist.vendor.delta_time.enable=true
 
+# SoC
+ro.soc.manufacturer=Qualcomm
+ro.soc.model=MSM8953
+
 # Tcp
 net.tcp.2g_init_rwnd=10
 
