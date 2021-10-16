@@ -237,6 +237,7 @@ PRODUCT_PACKAGES += \
     libdisplayconfig.vendor \
     libqdMetaData \
     libqdMetaData.vendor \
+    libtinyxml \
     libjson \
     libjson.vendor \
     disable_configstore \
@@ -475,6 +476,7 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
+    librmnetctl \
     libcnefeatureconfig \
     libxml2 \
     CarrierConfigOverlay
