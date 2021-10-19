@@ -217,6 +217,7 @@ persist.radio.calls.on.ims=0
 persist.radio.csvt.enabled=false
 persist.radio.jbims=0
 persist.radio.multisim.config=dsds
+persist.vendor.radio.msimmode=dsds
 persist.radio.VT_ENABLE=1
 persist.radio.volte.dan_support=true
 persist.sys.cust.lte_config=true
