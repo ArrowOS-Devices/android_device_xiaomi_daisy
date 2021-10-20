@@ -116,6 +116,7 @@ vendor.display.disable_skip_validate=1
 vendor.gralloc.enable_fb_ubwc=1
 debug.composition.type=c2d
 debug.hwui.renderer=skiagl
+debug.hwui.use_buffer_age=false
 video.accelerate.hw=1
 
 # DPM
