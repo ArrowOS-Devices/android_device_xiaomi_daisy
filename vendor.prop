@@ -253,6 +253,9 @@ persist.vendor.delta_time.enable=true
 ro.soc.manufacturer=Qualcomm
 ro.soc.model=MSM8953
 
+# System
+persist.sys.binary_xml=false
+
 # Tcp
 net.tcp.2g_init_rwnd=10
 
