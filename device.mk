@@ -171,11 +171,7 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio@2.0-impl:32 \
     com.qualcomm.qti.bluetooth_audio@1.0.vendor \
     vendor.qti.hardware.bluetooth_audio@2.1.vendor \
-    vendor.qti.hardware.bluetooth_dun@1.0.vendor \
-    libbluetooth_audio_session
-
-#Audio Specific device overlays
-DEVICE_PACKAGE_OVERLAYS += hardware/qcom-caf/msm8996/audio/configs/common/overlay
+    vendor.qti.hardware.bluetooth_dun@1.0.vendor
 
 # Audio configuration
 PRODUCT_COPY_FILES += \
