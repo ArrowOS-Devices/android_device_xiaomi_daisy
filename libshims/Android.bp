@@ -22,3 +22,11 @@ cc_library_shared {
     compile_multilib: "64",
     vendor: true
 }
+
+// lib-imsvt
+cc_library_shared {
+    name: "libshim-imsvt",
+    srcs: ["lib-imsvt.cpp"],
+    compile_multilib: "both",
+    system_ext_specific: true,
+}
