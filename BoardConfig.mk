@@ -225,8 +225,8 @@ ENABLE_VENDOR_RIL_SERVICE := true
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 
 # Sepolicy
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
-BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/public
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
+SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 #BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy-minimal
 
