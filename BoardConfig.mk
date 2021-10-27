@@ -222,7 +222,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 #VENDOR_SECURITY_PATCH := 2019-11-05
 
 # SELinux
-#include device/qcom/sepolicy-legacy-um/SEPolicy.mk
+include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 
 # Sepolicy
 #BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
