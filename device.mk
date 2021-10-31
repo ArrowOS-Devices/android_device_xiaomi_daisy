@@ -458,8 +458,7 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.sh \
     init.target.rc \
     init.daisy.rc \
-    ueventd.qcom.rc \
-    init.logcat.rc
+    ueventd.qcom.rc
 
 # RCS
 PRODUCT_PACKAGES += \
