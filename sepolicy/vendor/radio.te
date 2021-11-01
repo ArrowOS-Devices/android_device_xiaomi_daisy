@@ -1,9 +1,5 @@
-allow radio system_app_data_file:dir getattr;
-allow radio adb_data_file:file { getattr open read };
-allow radio gpuservice:binder { call };
-allow radio same_process_hal_file:file { execute read open getattr map };
-allow radio self:socket { create read };
+binder_call(radio, cnd)
+allow radio hal_datafactory_hwservice:hwservice_manager find;
+allow radio hal_iwlan_hwservice:hwservice_manager find;
 
 get_prop(radio, vendor_qcom_ims_prop)
-
-binder_call(radio, cnd)

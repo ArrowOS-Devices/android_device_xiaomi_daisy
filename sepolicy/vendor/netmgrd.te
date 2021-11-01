@@ -1,6 +1,1 @@
-set_prop(netmgrd, vendor_default_prop)
 set_prop(netmgrd, vendor_xlat_prop)
-allow netmgrd kernel:system module_request;
-allow netmgrd netutils_wrapper:process noatsecure;
-allow netmgrd sysfs:file { open read };
-allow netmgrd netmgrd:capability { sys_admin };

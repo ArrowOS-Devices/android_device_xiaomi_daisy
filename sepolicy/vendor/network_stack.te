@@ -1,2 +1,0 @@
-allow network_stack hal_perf_hwservice:hwservice_manager find;
-binder_call(network_stack, hal_perf_default)

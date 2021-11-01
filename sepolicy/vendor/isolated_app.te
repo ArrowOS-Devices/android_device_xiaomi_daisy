@@ -1,1 +1,0 @@
-#allow isolated_app vendor_cnd_vendor_prop:file { read };

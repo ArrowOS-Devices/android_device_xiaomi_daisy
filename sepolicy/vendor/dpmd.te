@@ -1,3 +1,0 @@
-set_prop(vendor_dpmd, ctl_stop_prop)
-
-allow vendor_dpmd same_process_hal_file:file  { execute getattr open read };

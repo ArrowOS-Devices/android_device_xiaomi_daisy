@@ -1,4 +1,0 @@
-allow bluetooth vendor_cnd_vendor_prop:file read;
-allow bluetooth boottime_prop:file read;
-allow bluetooth hal_perf_hwservice:hwservice_manager find;
-binder_call(bluetooth, hal_perf_default)
