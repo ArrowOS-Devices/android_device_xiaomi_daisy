@@ -231,8 +231,6 @@ PRODUCT_PACKAGES += \
     memtrack.msm8953 \
     libdisplayconfig \
     libdisplayconfig.vendor \
-    libqdMetaData \
-    libqdMetaData.vendor \
     libtinyxml \
     libjson \
     libjson.vendor \
@@ -383,7 +381,6 @@ PRODUCT_PACKAGES += \
     libOmxSwVencHevc \
     libOmxVdec \
     libOmxVenc \
-    libstagefright_enc_common \
     libstagefrighthw \
     libgui_vendor
 
@@ -573,12 +570,3 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     $(LOCAL_PATH)/wifi/WCNSS_cfg.dat:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/wlan/prima/WCNSS_cfg.dat \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
-
-# Wi-Fi Display
-#PRODUCT_BOOT_JARS += \
-#    WfdCommon
-
-# WiFi Display
-PRODUCT_PACKAGES += \
-    libnl \
-    libnl.vendor
