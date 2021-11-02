@@ -12,7 +12,6 @@ ril.subscription.types=NV,RUIM
 rild.libargs=-d/dev/smd0
 rild.libpath=/vendor/lib64/libril-qc-qmi-1.so
 persist.sys.fflag.override.settings_network_and_internet_v2=true
-persist.sys.fflag.override.settings_provider_model=false
 DEVICE_PROVISIONED=1
 
 # SurfaceFlinger
