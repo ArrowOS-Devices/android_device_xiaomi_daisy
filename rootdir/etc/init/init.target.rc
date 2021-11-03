@@ -133,13 +133,13 @@ service vendor-sensor-sh /vendor/bin/init.qcom.sensors.sh
     user root
     oneshot
 
-on property:init.svc.hwcomposer-2-1=stopped
+on property:init.svc.vendor.hwcomposer-2-1=stopped
     stop ppd
 
-on property:init.svc.hwcomposer-2-1=running
+on property:init.svc.vendor.hwcomposer-2-1=running
     start ppd
 
-on property:init.svc.hwcomposer-2-1=restarting
+on property:init.svc.vendor.hwcomposer-2-1=restarting
     stop ppd
 
 service vendor.sensors.qti /vendor/bin/sensors.qti
