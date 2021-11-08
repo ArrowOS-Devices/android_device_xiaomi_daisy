@@ -8,6 +8,7 @@ cc_library_shared {
     name: "android.hardware.ir@1.0-impl",
     defaults: ["hidl_defaults"],
     relative_install_path: "hw",
+    proprietary: true,
     srcs: ["ConsumerIr.cpp"],
     shared_libs: [
         "libhidlbase",
@@ -16,15 +17,16 @@ cc_library_shared {
         "libutils",
         "android.hardware.ir@1.0",
     ],
-    vendor: true,
 }
 
 cc_binary {
-    name: "android.hardware.ir@1.0-service",
-    defaults: ["hidl_defaults"],
     relative_install_path: "hw",
+    defaults: ["hidl_defaults"],
+    name: "android.hardware.ir@1.0-service",
+    proprietary: true,
     init_rc: ["android.hardware.ir@1.0-service.rc"],
     srcs: ["service.cpp"],
+
     shared_libs: [
         "liblog",
         "libhardware",
@@ -32,5 +34,5 @@ cc_binary {
         "libutils",
         "android.hardware.ir@1.0",
     ],
-    vendor: true,
+
 }
