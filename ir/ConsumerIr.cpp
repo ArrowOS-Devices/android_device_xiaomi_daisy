@@ -25,7 +25,9 @@ typedef struct ir_device {
 } ir_device_t;
 
 const static ir_device_t devices[] = {
+    {"lirc", "/dev/lirc0"},
     {"peel", "/dev/peel_ir"},
+    {"spi", "/dev/spidev5.1"},
 };
 
 ConsumerIr::ConsumerIr() : mDevice(nullptr) {
