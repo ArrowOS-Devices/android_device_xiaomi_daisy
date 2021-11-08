@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#define LOG_TAG "ConsumerIrService.xiaomi_msm8953"
+#define LOG_TAG "ConsumerIrService"
 
 #include <log/log.h>
 
