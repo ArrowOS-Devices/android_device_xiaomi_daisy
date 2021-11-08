@@ -26,7 +26,6 @@ typedef struct ir_device {
 
 const static ir_device_t devices[] = {
     {"lirc", "/dev/lirc0"},
-    {"peel", "/dev/peel_ir"},
     {"spi", "/dev/spidev5.1"},
 };
 
