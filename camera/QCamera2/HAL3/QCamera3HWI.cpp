@@ -3176,7 +3176,7 @@ void QCamera3HardwareInterface::handleMetadataWithLock(
                     i->timestamp, i->request_id, i->jpegMetadata, i->pipeline_depth,
                     i->capture_intent, internalPproc, i->fwkCacMode,
                     firstMetadataInBatch);
-            result.result = restoreHdrScene(i->scene_mode, result.result);
+            restoreHdrScene(i->scene_mode, result.result);
 
             saveExifParams(metadata);
 
@@ -3301,10 +3301,10 @@ done_metadata:
  *
  * PARAMETERS : @result: Metadata to be reported in capture result
  *
- * RETURN     : camera_metadata_t*
+ * RETURN     : None
  *
  *==========================================================================*/
-camera_metadata_t* QCamera3HardwareInterface::restoreHdrScene(
+void QCamera3HardwareInterface::restoreHdrScene(
         uint8_t sceneMode, const camera_metadata_t *result)
 {
     CameraMetadata resultWrapper;
@@ -3317,7 +3317,7 @@ camera_metadata_t* QCamera3HardwareInterface::restoreHdrScene(
         resultWrapper.update(ANDROID_CONTROL_SCENE_MODE, &sceneMode, 1);
     }
 
-    return resultWrapper.release();
+    resultWrapper.release();
 }
 
 /*===========================================================================
