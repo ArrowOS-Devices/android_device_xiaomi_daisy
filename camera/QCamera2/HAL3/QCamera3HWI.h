@@ -338,8 +338,7 @@ private:
     int64_t getMinFrameDuration(const camera3_capture_request_t *request);
     void handleMetadataWithLock(mm_camera_super_buf_t *metadata_buf,
             bool free_and_bufdone_meta_buf,
-            bool firstMetadataInBatch,
-            bool *p_is_metabuf_queued);
+            bool firstMetadataInBatch);
     void handleBatchMetadata(mm_camera_super_buf_t *metadata_buf,
             bool free_and_bufdone_meta_buf);
     void handleBufferWithLock(camera3_stream_buffer_t *buffer,
