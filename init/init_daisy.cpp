@@ -61,8 +61,8 @@ void property_override_multi(char const system_prop[], char const vendor_prop[],
 void vendor_load_properties()
 {
     // fingerprint
-    property_override("ro.build.description", "redfin-user 12 SPB5.210812.002 7671067 release-keys");
-    property_override_multi("ro.build.fingerprint", "ro.vendor.build.fingerprint", "ro.bootimage.build.fingerprint", "google/redfin/redfin:12/SPB5.210812.002/7671067:user/release-keys");
+    property_override("ro.build.description", "redfin-user 12 SP1A.211105.003 7757856 release-keys");
+    property_override_multi("ro.build.fingerprint", "ro.vendor.build.fingerprint", "ro.bootimage.build.fingerprint", "google/redfin/redfin:12/SP1A.211105.003/7757856:user/release-keys");
     // Misc
     property_override("ro.com.google.clientidbase", "android-xiaomi");
     property_override("ro.com.google.clientidbase.ms", "android-xiaomi-rev1");
