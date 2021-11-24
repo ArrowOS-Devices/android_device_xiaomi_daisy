@@ -234,7 +234,8 @@ PRODUCT_PACKAGES += \
     libjson \
     libjson.vendor \
     disable_configstore \
-    libgenlock
+    libgenlock \
+    libqdMetaData
 
 # Device-specific settings
 PRODUCT_PACKAGES += \
