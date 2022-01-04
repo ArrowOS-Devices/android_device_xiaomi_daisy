@@ -19,4 +19,16 @@
     "target_path": "vendor/custom/prebuilts",
     "branch": "master"
   }
+  {
+    "remote": "github",
+    "repository": "mvaisakh/gcc-arm64",
+    "target_path": "prebuilts/gcc/linux-x86/aarch64/aarch64-elf",
+    "branch": "gcc-master"
+  }
+  {
+    "remote": "github",
+    "repository": "arter97/arm32-gcc",
+    "target_path": "prebuilts/gcc/linux-x86/arm/arm-eabi",
+    "branch": "master"
+  }
 ]
