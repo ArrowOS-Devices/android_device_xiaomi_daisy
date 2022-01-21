@@ -1,11 +1,110 @@
+# ART
+ro.vendor.qti.am.reschedule_service=true
+ro.sys.fw.dex2oat_thread_count=8
+
+# Audio
+audio.chk.cal.us=0
+audio.offload.disable=false
+
+# Bluetooth
+bluetooth.hfp.client=1
+ro.bluetooth.hfp.ver=1.7
+ro.qualcomm.bt.hci_transport=smd
+persist.bt.enableAptXHD=true
+
+# BPF
+ro.kernel.ebpf.supported=true
+
+# Camera
+camera.lowpower.record.enable=1
+media.camera.ts.monotonic=1
+persist.vendor.qti.telephony.vt_cam_interface=2
+vidc.enc.dcvs.extra-buff-count=2
+
+# Console
+persist.console.silent.config=1
+
+# Display
+persist.hwc.mdpcomp.enable=true
+ro.qualcomm.cabl=0
+sdm.debug.disable_skip_validate=1
+video.accelerate.hw=1
+
+# DPM
+persist.vendor.dpm.loglevel=0
+persist.vendor.dpm.nsrm.bkg.evt=3955
+
+# Fingerprint
+persist.qfp=false
+
+# Fm
+ro.fm.transmitter=false
+
+# GPS
+persist.gps.qc_nlp_in_use=1
+persist.loc.nlp_name=com.qualcomm.location
+ro.gps.agps_provider=1
+ro.ril.def.agps.mode=1
+
 # IMS
 persist.vendor.ims.disableADBLogs=1
 persist.vendor.ims.disableIMSLogs=1
 persist.vendor.ims.disableDebugLogs=1
 persist.vendor.ims.disableQXDMLogs=1
 
+# Media
+av.debug.disable.pers.cache=1
+media.aac_51_output_enabled=true
+media.msm8956hw=0
+mm.enable.sec.smoothstreaming=true
+mmp.enable.3g2=true
+vendor.mm.enable.qcom_parser=1048575
+vendor.video.disable.ubwc=1
+persist.mm.sta.enable=0
+
+# Memperf properties
+ro.memperf.lib=libmemperf.so
+ro.memperf.enable=false
+
+# Netmgrd
+persist.data.netmgrd.qos.enable=true
+
+# NTP
+persist.backup.ntpServer=0.pool.ntp.org
+
+# Perf
+ro.sys.fw.dex2oat_thread_count=8
+ro.vendor.qti.sys.fw.bservice_enable=true
+ro.vendor.qti.cgroup_follow.enable=true
+
+# QTI Performance
+vendor.iop.enable_uxe=1
+vendor.iop.enable_prefetch_ofr=1
+vendor.perf.iop_v3.enable=1
+ro.vendor.qti.am.reschedule_service=true
+ro.vendor.qti.sys.fw.bservice_age=5000
+ro.vendor.qti.sys.fw.bservice_limit=5
+
 # Qualcomm
 ro.vendor.qti.va_aosp.support=1
+
+# Radio
+DEVICE_PROVISIONED=1
+persist.data.iwlan.enable=true
+persist.dbg.ims_volte_enable=1
+persist.data.iwlan=1
+persist.data.iwlan.ipsec.ap=1
+persist.radio.calls.on.ims=0
+persist.radio.csvt.enabled=false
+persist.radio.jbims=0
+persist.radio.VT_ENABLE=1
+persist.radio.volte.dan_support=true
+persist.radio.videopause.mode=1
+ril.subscription.types=NV,RUIM
+rild.libargs=-d/dev/smd0
+
+# SD Card
+persist.fuse_sdcard=true
 
 # SurfaceFlinger
 ro.surface_flinger.protected_contents=true
