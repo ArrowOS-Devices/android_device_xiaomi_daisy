@@ -445,6 +445,7 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.sh \
     init.target.rc \
     init.daisy.rc \
+    init.verity.rc \
     ueventd.qcom.rc
 
 # RCS
