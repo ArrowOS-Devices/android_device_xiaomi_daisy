@@ -17,7 +17,7 @@
 // Goodix
 cc_library_shared {
     name: "fakelogprint",
-    srcs: ["fakelogprint.cpp"],
+    srcs: ["fp/fakelogprint.cpp"],
     shared_libs: ["liblog"],
     compile_multilib: "64",
     vendor: true
@@ -26,7 +26,7 @@ cc_library_shared {
 // lib-imsvt
 cc_library_shared {
     name: "libshim-imsvt",
-    srcs: ["lib-imsvt.cpp"],
+    srcs: ["ims/lib-imsvt.cpp"],
     compile_multilib: "both",
     system_ext_specific: true,
 }
