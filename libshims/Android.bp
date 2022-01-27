@@ -27,6 +27,10 @@ cc_library_shared {
 cc_library_shared {
     name: "libshim-imsvt",
     srcs: ["ims/lib-imsvt.cpp"],
+    shared_libs: [
+        "libgui",
+        "libutils",
+    ],
     compile_multilib: "both",
     system_ext_specific: true,
 }
