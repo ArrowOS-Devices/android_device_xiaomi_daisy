@@ -14,7 +14,8 @@
 ** limitations under the License.
 */
 
-#include <gui/Surface.h>
+#include <stdint.h>
+#include <gui/IGraphicBufferProducer.h>
 
 namespace android {
 
