@@ -1390,4 +1390,14 @@
         <path name="speaker" />
     </path>
 
+    <path name="low-latency-playback speaker-and-bt-sco">
+      <path name="low-latency-playback speaker" />
+      <path name="low-latency-playback bt-sco"  />
+    </path>
+
+    <path name="low-latency-playback speaker-and-bt-sco-wb">
+      <path name="low-latency-playback speaker" />
+      <path name="low-latency-playback bt-sco-wb" />
+    </path>
+
 </mixer>
