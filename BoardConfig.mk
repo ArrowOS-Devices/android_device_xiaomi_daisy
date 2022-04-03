@@ -13,7 +13,6 @@ DEVICE_PATH := device/xiaomi/daisy
 TARGET_KERNEL_CONFIG := daisy_defconfig
 
 # Filesystem
-TARGET_USERIMAGES_SPARSE_EXT_DISABLED := false
 TARGET_NO_RECOVERY := true
 TARGET_COPY_OUT_VENDOR := vendor
 TARGET_COPY_OUT_PRODUCT := system/product
