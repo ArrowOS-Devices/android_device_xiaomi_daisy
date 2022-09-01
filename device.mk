@@ -84,24 +84,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
 
 PRODUCT_PACKAGES += \
-    android.hardware.keymaster@4.1.vendor \
-    android.hardware.gatekeeper@1.0.vendor \
-    android.hardware.biometrics.fingerprint@2.1.vendor \
-    android.hardware.radio@1.5.vendor \
-    android.hardware.gnss@1.1.vendor \
-    android.hardware.bluetooth@1.0.vendor \
     android.hardware.neuralnetworks@1.3.vendor \
-    android.hardware.secure_element@1.2.vendor \
-    android.system.net.netd@1.1.vendor \
-    android.hardware.radio.config@1.2.vendor \
-    android.hardware.gnss@2.1.vendor \
-    android.hardware.radio.deprecated@1.0.vendor \
-    android.hidl.allocator@1.0.vendor \
-    android.hardware.drm@1.1.vendor \
-    android.hardware.drm@1.2.vendor \
-    android.hardware.drm@1.3.vendor \
-    android.hardware.drm@1.4.vendor \
-    android.hardware.power@1.2.vendor
+    android.hidl.allocator@1.0.vendor
 
 # ANT
 PRODUCT_PACKAGES += \
@@ -192,11 +176,13 @@ PRODUCT_COPY_FILES += \
 
 # BT
 PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0.vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
     vendor.qti.hardware.btconfigstore@2.0.vendor
 
 # Camera
 PRODUCT_PACKAGES += \
+    android.frameworks.sensorservice@1.0.vendor \
     android.hardware.camera.provider@2.4-impl:32 \
     android.hardware.camera.provider@2.4-service \
     camera.msm8953 \
@@ -214,6 +200,7 @@ PRODUCT_PACKAGES += \
 
 # Display
 PRODUCT_PACKAGES += \
+    android.frameworks.displayservice@1.0.vendor \
     android.hardware.graphics.allocator@2.0-impl:64 \
     android.hardware.graphics.allocator@2.0-service \
     android.hardware.graphics.composer@2.1-impl:64 \
@@ -246,7 +233,11 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl:64 \
     android.hardware.drm@1.0-service \
     android.hardware.drm@1.4-service.clearkey \
-    android.hardware.drm@1.2-service.widevine
+    android.hardware.drm@1.2-service.widevine \
+    android.hardware.drm@1.1.vendor \
+    android.hardware.drm@1.2.vendor \
+    android.hardware.drm@1.3.vendor \
+    android.hardware.drm@1.4.vendor
 
 # Ebtables
 PRODUCT_PACKAGES += \
@@ -271,6 +262,16 @@ PRODUCT_PACKAGES += \
     libqti_vndfwk_detect.vendor \
     libvndfwk_detect_jni.qti.vendor \
     libvndfwk_detect_jni.qti
+
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0.vendor
+
+# GNSS
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.2.vendor \
+    android.hardware.gnss@2.1.vendor \
+    android.hardware.gnss@3.0.vendor
 
 # GPS
 PRODUCT_COPY_FILES += \
@@ -324,6 +325,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
 
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@4.1.vendor
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.daisy
@@ -352,6 +357,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libnetfilter_conntrack \
     libnfnetlink
+
+# Network
+PRODUCT_PACKAGES += \
+    android.system.net.netd@1.1.vendor
 
 # OMX
 PRODUCT_PACKAGES += \
@@ -385,6 +394,7 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 
 # Power
 PRODUCT_PACKAGES += \
+    android.hardware.power@1.2.vendor \
     android.hardware.power-service-qti \
     android.hardware.power.stats@1.0-service.mock
 
@@ -450,6 +460,10 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
+    android.hardware.radio@1.5.vendor \
+    android.hardware.radio.config@1.2.vendor \
+    android.hardware.radio.deprecated@1.0.vendor \
+    android.hardware.secure_element@1.2.vendor \
     librmnetctl \
     libcnefeatureconfig \
     libxml2 \
@@ -540,7 +554,6 @@ PRODUCT_PACKAGES += \
     WifiOverlay \
     TetherOverlay \
     wcnss_service \
-    libwifi-hal-ctrl \
     libwifi-hal-qcom
 
 PRODUCT_COPY_FILES += \
