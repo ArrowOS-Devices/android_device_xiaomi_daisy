@@ -5,4 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_daisy.mk
+    $(LOCAL_DIR)/arrow_daisy.mk
+	
+COMMON_LUNCH_CHOICES := \
+    arrow_daisy-user \
+    arrow_daisy-userdebug \
+    arrow_daisy-eng
